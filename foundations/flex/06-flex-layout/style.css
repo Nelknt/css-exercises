@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 img {
@@ -16,11 +19,71 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px;
 }
 
 input {
   border: 1px solid #ddd;
   border-radius: 16px;
   padding: 8px 24px;
+  margin: 16px;
   width: 400px;
+}
+
+.main {
+  /* flex: 1; */
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(131, 131, 131);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.left-links {
+  display: flex;
+  justify-content: flex-start;
+  padding: 6px;
+  margin: 6px;
+  gap: 8px;
+}
+
+.right-links {
+  display: flex;
+  justify-content: flex-end;
+  padding: 6px;
+  margin: 6px;
+  gap: 8px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.derp {
+  background: #eeeeee
 }
